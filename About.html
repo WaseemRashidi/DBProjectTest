@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar{
+  display: flex;
+  background-color:rgb(15, 0, 0);
+  position: fixed;
+  top:0;
+  width: 100%;
+  font-size: 20px;
+}
+
+.nav-right{
+  text-align: right;
+  float:right;
+}
+
+.nav-right li {
+    display: inline;
+    float: left;
+    padding-left: 15px;
+  }
+
+  .nav-right li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color:white;
+  }
+
+  .nav-right  li ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .nav-right li a:hover {
+    background-color: rgb(31, 199, 106);
+  }
+
+  .nav-right .active {
+    background-color: #04AA6D;
+  }
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  width: 300px;
+  height: 400px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-right">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/men.html">Men</a></li>
+          <li><a href="/women.html">Women</a></li>
+          <li><a href="/kids.html">Kids</a></li>
+          <li><a href="/About.html">About</a></li>
+          <li><a href="/login.html">Login</a></li>
+          <li><a href="/Register.html">Create Account</a></li>
+          <li><a href="/Contact.html">Contact Us</a></li>
+        </div>
+    </nav>
+
+<div class="about-section">
+  <h1>About Us </h1>
+  <p>Our clothing store provides an easy interface for customers to purchasing clothes online.</p>
+  <p>For any reviews visit the  Home page comment section. You can also send us an email through the contact us page.
+      <br>Thank you for your patience and hope you had a great shopping experience.
+  </p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <center><img src="/aboutimages/waseem.jpg" alt="Jane" style=width:"150px" height="185px"></center>
+      <div class="container">
+        <h2>Waseem</h2>
+        <p class="title">CEO & Founder</p>
+
+        <p>waseem.rashidi@ontariotechu.net</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <center><img src="/aboutimages/ahmad.png" alt="Jane" style=width:"135px" height="160px"></center>
+      <div class="container">
+        <h2>Ahmad</h2>
+        <p class="title">Marketing Lead</p>
+        <p>“Ambitious and driven individual, who isn’t afraid to face a challenge. ”</p>
+        <p>ahmad.bukhari@ontariotechu.net</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <center><img src="/aboutimages/wrey.png" alt="Jane" style=width:"1350px" height="160px"></center>
+      <div class="container">
+        <h2>Wreyathi</h2>
+        <p class="title">Designer</p>
+        <p>“A performance-driven Individual who enjoys trying new things.”</p>
+        <p>wreyathi.chowdhury@ontariotechu.net</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="column">
+  <div class="card">
+      <center><img src="/aboutimages/yahya.png" alt="Jane" style=width:"1350px" height="160px"></center>
+    <div class="container">
+      <h2>Yahya</h2>
+      <p class="title">CFO</p>
+
+      <p>yahya.refaat@ontariotechu.net</p>
+      <p><button class="button">Contact</button></p>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
